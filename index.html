@@ -27,7 +27,7 @@
         <div class="sidebar-list">
          <ul>
            <li>
-             <ul class="sidebar-sublist">
+             <ul class="sidebar-sublist1">
                <h2>EXPLORE</h2>
                <li><a href="#">Picks</a></li>
                <li><a href="#">Popular</a></li>
@@ -35,18 +35,18 @@
              </ul>
            </li>
            <li>
-             <ul class="sidebar-sublist">
+             <ul class="sidebar-sublist2">
                <h2>GROW</h2>
                <li><a href="#">Jobs</a></li>
                <li>
                  <a href="#">
-                   CodePen <span>PRO</span>
+                   CodePen <span class="probadge">PRO</span>
                  </a></li>
                <li><a href="#">Challenges</a></li>
              </ul>
            </li>
            <li>
-             <ul class="sidebar-sublist">
+             <ul class="sidebar-sublist3">
                <h2>COMPANIE</h2>
                <li><a href="#">Hire Talent</a></li>
                <li><a href="#">Create Team</a></li>
@@ -54,13 +54,13 @@
              </ul>
            </li>
            <li>
-             <a class="sidebar-sublist2"href="#">Newsletter</a>
+             <a class="sidebar-sublist4"href="#">Newsletter</a>
            </li>
            <li>
-             <a class="sidebar-sublist2"href="#">Blog</a>
+             <a class="sidebar-sublist5"href="#">Blog</a>
            </li>
            <li>
-             <a class="sidebar-sublist2"href="#">Doc&Support</a>
+             <a class="sidebar-sublist6"href="#">Doc&Support</a>
            </li>
           </ul>
         </div>
@@ -68,11 +68,48 @@
       <main class="l-main">
       <header class="l-header">
         <!-- Write code for Header-->
+        <i class="fa fa-search"></i>
+        <div class="headersearch">
+          <input type="search" name="" placeholder="Search CodePen..." class="search">
+        </div>
+        <div class="headerbutton">
+          <button type="button" name="button" class="singup">Sign Up</button>
+          <button type="button" name="button" class="login">Log In</button>
+        </div>
       </header>
       <div class="l-content">
         <section class="l-section">
           <div class="hero">
              <!-- Write code for Hero-->
+             <div class="hero--main">
+               <h1><i class="fa fa-cube"></i></h1>
+               <h1>The best place to build, test, and discover front-end code.</h1>
+               <p>CodePen is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.</p>
+               <button type="button" name="button" class="singup">SignUpforFree</button>
+             </div>
+             <div class="hero--sub">
+               <div class="html">
+                 <h1><i class="fa fa-cog"></i>HTML</h1>
+                 <h1><i class="fa fa-angle-down"></i></h1>
+                 <p>"<"div class="rect">"<"/div>"</p>
+               </div>
+               <div class="scss">
+                 <h1><i class="fa fa-cog"></i>SCSS</h1>
+                 <h1><i class="fa fa-angle-down"></i></h1>
+                 <p>.rect {
+                    background: linear-gradient(
+                    -119deg,
+                    $gray 0%,
+                    $dark-gray100%); |</p>
+               </div>
+               <div class="js">
+                 <h1><i class="fa fa-cog"></i>JS</h1>
+                 <h1><i class="fa fa-angle-down"></i></h1>
+                 <p>var colors =
+                    ["#74B087","#DE7300","#74B087"];
+                    function animate() {};</p>
+               </div>
+             </div>
           </div>
       </div>
         </section>
