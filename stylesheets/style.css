@@ -50,7 +50,8 @@ body {
   width: 50%;
   height: 40px;
   border-radius: 3px;
-  display: inline-block; }
+  display: inline-block;
+  float: left; }
 
 .login {
   background-color: #444857;
@@ -60,19 +61,17 @@ body {
   border-radius: 3px;
   display: inline-block; }
 
-.search {
-  float: left;
-  width: 82%;
-  height: 40px;
-  background-color: #252830;
-  padding: 8px;
-  margin: 8px; }
-
 .headerbutton {
   width: 18%; }
 
 .headersearch {
-  height: 40px; }
+  height: 40px;
+  float: left;
+  width: 75%;
+  height: 40px;
+  background-color: #252830;
+  padding: 8px;
+  margin: 8px; }
 
 .sidebar-logo {
   font-size: 2rem;
