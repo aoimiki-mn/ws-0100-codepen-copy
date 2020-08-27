@@ -18,8 +18,8 @@
         </div>
         <div class="sidebar__start">
           <p>TRY OUR ONLINE EDITOR</p>
-          <a class="sidebar__start--button" href="#">
-            <span class="sidebar__start--buttontext">Start Coding</span>
+          <a class="button button-logo" href="">
+            <span class="button-logo-text">Start Coding</span>
           </a>
         </div>
         <div class="sidebar__list">
@@ -68,8 +68,8 @@
           <input type="text" name="" placeholder="Search CodePen..." class="header__search--bar">
         </div>
         <div class="header__button">
-          <button type="button" name="button" class="header__button--singup">Sign Up</button>
-          <button type="button" name="button" class="header__button--login">Log In</button>
+          <button type="button" name="button" class="button header__button--singup">Sign Up</button>
+          <button type="button" name="button" class="button header__button--login">Log In</button>
         </div>
       </header>
       <div class="l-content">
@@ -80,32 +80,63 @@
                <h1><i class="fa fa-cube"></i></h1>
                <h2>The best place to build, test, and discover front-end code.</h2>
                <p><span class="text-bold">CodePen is a social development environment</span> for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.</p>
-               <button type="button" name="button" class="hero__main--button">Sign Up for Free</button>
+               <button type="button" name="button" class="button hero__main--button">Sign Up for Free</button>
              </div>
              <div class="hero--image">
                <div class="hero__image--html">
-                 <div class="hero__image--html_title">
+                 <div class="hero-title">
                    <i class="fa fa-cog cog"></i>
                    <p>HTML</p>
                    <i class="fa fa-angle-down angle"></i>
                  </div>
-                 <p>"<"div class="rect">"<"/div>"</p>
+                 <p>
+                   <span class="hilight-orange">&lt;div</span>
+                   <span class="hilight-beige">class</span>
+                   =
+                   <span class="hilight-green">"rect"</span>
+                   <span class="hilight-orange">&gt;&lt;/div&gt;</span>
+                 </p>
                </div>
                <div class="hero__image--scss">
-                 <h1><i class="fa fa-cog"></i>SCSS</h1>
-                 <h1><i class="fa fa-angle-down"></i></h1>
-                 <p>.rect {
-                    background: linear-gradient(
-                    -119deg,
-                    $gray 0%,
-                    $dark-gray100%); |</p>
+                 <div class="hero-title">
+                   <h1><i class="fa fa-cog"></i>SCSS</h1>
+                   <h1><i class="fa fa-angle-down"></i></h1>
+                 </div>
+                 <div class="code-card-body">
+                   <p><span class="hilight-beige">.rect</span> {</p>
+                   <p class="l-margin-left-2rem">
+                   <span class="hilight-purple">background</span>: <span class="hilight-beige">linear-gradient</span>(
+                   </p>
+                   <p class="l-margin-left-4rem">
+                   <span class="hilight-orange">-119deg</span>,
+                   </p>
+                   <p class="l-margin-left-4rem">
+                   <span class="hilight-beige">$gray</span> <span class="hilight-orange">0%</span>,
+                   </p>
+                   <p class="l-margin-left-4rem">
+                   <span class="hilight-beige">$dark-gray</span><span class="hilight-orange">100%</span>); <span class="cursor">|</span>
+                   </p>
+                   </div>
                </div>
                <div class="hero__image--js">
-                 <h1><i class="fa fa-cog"></i>JS</h1>
-                 <h1><i class="fa fa-angle-down"></i></h1>
-                 <p>var colors =
-                    ["#74B087","#DE7300","#74B087"];
-                    function animate() {};</p>
+                 <div class="hero-title">
+                   <h1><i class="fa fa-cog"></i>JS</h1>
+                   <h1><i class="fa fa-angle-down"></i></h1>
+                 </div>
+                 <div class="code-card-body">
+                   <p>
+                   <span class="hilight-beige">var</span>&nbsp;<span class="hilight-blue">colors</span>&nbsp;=
+                   </p>
+                   <p>
+                   [<span class="hilight-green">"#74B087"</span>,<span class="hilight-green">"#DE7300"</span>,<span class="hilight-green">"#74B087"</span>];
+                   </p>
+                   <p>
+                   &nbsp;
+                   </p>
+                   <p>
+                   <span class="hilight-beige">function</span>&nbsp;<span class="hilight-blue">animate</span>()&nbsp;{};
+                   </p>
+                 </div>
                </div>
              </div>
           </div>
@@ -114,15 +145,286 @@
         <section class="l-section">
           <div class="l-flex l-flex-wrap features">
              <!-- Write code for Features-->
+             <div class="features-card">
+                 <div class="card-icon"><i class="fa fa-microchip"></i></div>
+                 <div class="card">
+                     <div class="card-title">
+                         <h2>Build &amp; Test</h2>
+                     </div>
+                     <div class="card-text">
+                         Get work done quicker by building out entire projects or isolating code to test features and animations. Want to keep it all under wraps?
+                         <span class="text-accent text-bold">Upgrade to a <span class="probadge">PRO</span> account</span>to keep your work private.
+                     </div>
+                     <div class="card-button">
+                         <a class="button button-secondary">Try the Editor</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="features-card">
+                 <div class="card-icon"><i class="fa fa-globe"></i></div>
+                 <div class="card">
+                     <div class="card-title">
+                         <h2>Learn &amp; Discover</h2>
+                     </div>
+                     <div class="card-text">
+                         Just starting out? Browsing, forking, and playing with Pens is a great way to understand how they were built and how code works. Teaching a class?
+                         <span class="text-accent text-bold">Professor mode</span> lets your students to see and comment on real-time Pen updates.
+                     </div>
+                     <div class="card-button">
+                         <a class="button button-secondary">Learn More</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="features-card">
+                 <div class="card-icon"><i class="fa fa-share"></i></div>
+                 <div class="card">
+                     <div class="card-title">
+                         <h2>Share Your Work</h2>
+                     </div>
+                     <div class="card-text">
+                         Become a part of the most active front-end community in the world by sharing work. Presenting at a conference? Show your code directly in the browser with
+                         <span class="text-accent text-bold">Presentation Mode.</span>
+                     </div>
+                     <div class="card-button">
+                         <a class="button button-secondary">Expore Popular</a>
+                     </div>
+                 </div>
+             </div>
           </div>
         </section>
         <section class="l-section">
           <div class="product-item-list">
              <!-- Write code for Product List-->
+             <div class="product-item-list-body">
+                    <div class="l-flex l-flex-wrap product-item-row">
+                        <div class="product-item">
+                            <div class="product-title">
+                                <h3>
+                                    Find inspiration from 1.8 million+ front-end designers and developers.
+                                </h3>
+                                <div class="product-title-body">
+                                    Browse and share work from world-class designers and developers in the front-end community.
+                                </div>
+                                <div class="product-link">
+                                    <a class="text-accent" href="">Explore Picked Pens →</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item product-item">
+                            <div class="product-item-card">
+                                <div class="product-item-card-image">
+                                    <img src="https://assets.codepen.io/1443259/internal/screenshots/pens/zYvWYEB.default.png">
+                                </div>
+                                <div class="product-item-card-body">
+                                    <div class="product-item-card-body-avator">
+                                        <img src="https://assets.codepen.io/1443259/internal/avatars/users/default.png">
+                                    </div>
+                                    <div class="product-item-card-body-title">
+                                        <h4 class="product-item-card-body-title-text">Pixcel Dust</h4>
+                                        <p class="text-weak">Paul Neave</p>
+                                    </div>
+                                </div>
+                                <div class="product-item-card-footer">
+                                    <div class="l-flex">
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-heart"></i>
+                                            <span>76</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-comment"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-eye"></i>
+                                            <span>1,585</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-card">
+                                <div class="product-item-card-image">
+                                    <img src="https://assets.codepen.io/1443259/internal/screenshots/pens/zYvWYEB.default.png">
+                                </div>
+                                <div class="product-item-card-body">
+                                    <div class="product-item-card-body-avator">
+                                        <img src="https://assets.codepen.io/1443259/internal/avatars/users/default.png">
+                                    </div>
+                                    <div class="product-item-card-body-title">
+                                        <h4 class="product-item-card-body-title-text">Pixcel Dust</h4>
+                                        <p class="text-weak">Paul Neave</p>
+                                    </div>
+                                </div>
+                                <div class="product-item-card-footer">
+                                    <div class="l-flex">
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-heart"></i>
+                                            <span>76</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-comment"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-eye"></i>
+                                            <span>1,585</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-flex l-flex-wrap product-item-row">
+                        <div class="product-item">
+                            <div class="product-item-card">
+                                <div class="product-item-card-image">
+                                    <img src="https://assets.codepen.io/1443259/internal/screenshots/pens/zYvWYEB.default.png">
+                                </div>
+                                <div class="product-item-card-body">
+                                    <div class="product-item-card-body-avator">
+                                        <img src="https://assets.codepen.io/1443259/internal/avatars/users/default.png">
+                                    </div>
+                                    <div class="product-item-card-body-title">
+                                        <h4 class="product-item-card-body-title-text">Pixcel Dust</h4>
+                                        <p class="text-weak">Paul Neave</p>
+                                    </div>
+                                </div>
+                                <div class="product-item-card-footer">
+                                    <div class="l-flex">
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-heart"></i>
+                                            <span>76</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-comment"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-eye"></i>
+                                            <span>1,585</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-card">
+                                <div class="product-item-card-image">
+                                    <img src="https://assets.codepen.io/1443259/internal/screenshots/pens/zYvWYEB.default.png">
+                                </div>
+                                <div class="product-item-card-body">
+                                    <div class="product-item-card-body-avator">
+                                        <img src="https://assets.codepen.io/1443259/internal/avatars/users/default.png">
+                                    </div>
+                                    <div class="product-item-card-body-title">
+                                        <h4 class="product-item-card-body-title-text">Pixcel Dust</h4>
+                                        <p class="text-weak">Paul Neave</p>
+                                    </div>
+                                </div>
+                                <div class="product-item-card-footer">
+                                    <div class="l-flex">
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-heart"></i>
+                                            <span>76</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-comment"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-eye"></i>
+                                            <span>1,585</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-item-card">
+                                <div class="product-item-card-image">
+                                    <img src="https://assets.codepen.io/1443259/internal/screenshots/pens/zYvWYEB.default.png">
+                                </div>
+                                <div class="product-item-card-body">
+                                    <div class="product-item-card-body-avator">
+                                        <img src="https://assets.codepen.io/1443259/internal/avatars/users/default.png">
+                                    </div>
+                                    <div class="product-item-card-body-title">
+                                        <h4 class="product-item-card-body-title-text">Pixcel Dust</h4>
+                                        <p class="text-weak">Paul Neave</p>
+                                    </div>
+                                </div>
+                                <div class="product-item-card-footer">
+                                    <div class="l-flex">
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-heart"></i>
+                                            <span>76</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-comment"></i>
+                                            <span>1</span>
+                                        </div>
+                                        <div class="flex product-item-card-footer-card">
+                                            <i class="fa fa-eye"></i>
+                                            <span>1,585</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="page-button">
+            <a class="button button-outline">Prev</a>
+            <a class="button button-outline">Next</a>
           </div>
         </section>
         <footer class="l-footer l-flex l-flex-wrap footer">
              <!-- Write code for Footer List-->
+             <div class="footer-links">
+               <ul class="l-flex l-align-center">
+                   <h4>CodePen</h4>
+                   <li class="text-weak">About</li>
+                   <li class="text-weak">Blog</li>
+                   <li class="text-weak">Advertising</li>
+                   <li class="text-weak">Docs</li>
+                   <li class="text-weak">Support</li>
+                   <li class="text-weak">Shop</li>
+               </ul>
+               <ul class="l-flex l-align-center">
+                   <h4>For</h4>
+                   <li class="text-weak">Teams</li>
+                   <li class="text-weak">Education</li>
+                   <li class="text-weak">Privacy</li>
+                   <li class="text-weak">Documentation</li>
+               </ul>
+               <ul class="l-flex l-align-center">
+                   <h4>Social</h4>
+                   <li class="text-weak">Challenges</li>
+                   <li class="text-weak">Twitter</li>
+                   <li class="text-weak">Facebook</li>
+                   <li class="text-weak">Instagram</li>
+               </ul>
+               <ul class="l-flex l-align-center">
+                   <h4>Community</h4>
+                   <li class="text-weak">Spectrum</li>
+                   <li class="text-weak">Teams</li>
+                   <li class="text-weak">Code of Conduct</li>
+                   <li class="text-weak">Jobs</li>
+               </ul>
+           </div>
+           <div class="footer-copyright">
+             <div class="footer-logo">
+               C<i class="fa fa-cube"></i>DEPEN
+             </div>
+             <div class="copy-right">
+               <p class="text-weak">
+                 ©2020 CodePen<br>
+                 Demo or it didn't happen.
+               </p>
+             </div>
+           </div>
         </footer>
       </main>
     </div>
